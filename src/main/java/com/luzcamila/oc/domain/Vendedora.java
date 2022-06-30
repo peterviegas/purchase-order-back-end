@@ -33,5 +33,5 @@ public class Vendedora extends Pessoa implements Serializable{
 		super(id, nome, cpf, telefone);
 	}
 	
-	
+
 }
