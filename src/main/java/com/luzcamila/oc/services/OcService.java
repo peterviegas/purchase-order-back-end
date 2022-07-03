@@ -55,8 +55,8 @@ public class OcService {
 		OC newObj = new OC();
 		newObj.setId(obj.getId());
 		newObj.setObservacoes(obj.getObservacoes());
-		newObj.setPrioridade(Prioridade.toEnum(obj.getPrioridade()));
-		newObj.setStatus(Status.toEnum(obj.getStatus()));
+		newObj.setPrioridade(Prioridade.toEnum(obj.getPrioridade().getCod()));
+		newObj.setStatus(Status.toEnum(obj.getStatus().getCod()));
 		
 		Vendedora vend = vendedoraService.findById(obj.getVendedora());
 		Cliente cli = clienteService.findById(obj.getCliente());

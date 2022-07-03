@@ -2,9 +2,9 @@ package com.luzcamila.oc.domain.enuns;
 
 public enum Status {
 
-	ABERTO(0, "ABERTO"),
-	ANDAMENTO(1, "ANDAMENTO"),
-	ENCERRADO(2, "ENCERRADO");
+	ABERTO(0, "Aberto"),
+	ANDAMENTO(1, "Andamento"),
+	ENCERRADO(2, "Encerrado");
 	
 	private Integer cod;
 	private String descricao;

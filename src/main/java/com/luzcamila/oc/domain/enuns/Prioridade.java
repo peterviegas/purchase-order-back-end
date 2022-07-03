@@ -1,9 +1,9 @@
 package com.luzcamila.oc.domain.enuns;
 
 public enum Prioridade {
-	BAIXA(0, "BAIXA"),
-	MEDIA(1, "MEDIA"),
-	ALTA(2, "ALTA");
+	BAIXA(0, "Baixa"),
+	MEDIA(1, "Média"),
+	ALTA(2, "Alta");
 	
 	private Integer cod;
 	private String descricao;
