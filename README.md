@@ -62,7 +62,7 @@ To set up the project locally, download the necessary tools:
 2. Import the project into your workspace using Spring Boot.
 3. Set up the **MySQL** database and configure it in the application properties.
 4. Start the backend server.
-5. **Postman** 
+5. [Download the Postman collection here](postman/sua_colecao_postman.json)
 6. Run **Angular** frontend application, which is built to consume the REST API efficiently. https://github.com/peterviegas/purchase-order-front-end
   
 ---
