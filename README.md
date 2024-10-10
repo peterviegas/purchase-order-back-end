@@ -1,5 +1,5 @@
 ## purchase-order-back-end
-Purchase Order - Creation of objects and tables using Spring Boot 2.x technologies to develop a REST API hosting on Herokun platform.
+Purchase Order - Creation of objects and tables using Spring Boot 2.x technologies to develop a REST API hosting.
 
 ### 📚 Core Concepts:
 
@@ -33,7 +33,7 @@ The backend is built using **Java** and **Spring Boot 2.x.x**. It includes:
 - Implementing custom **exception handling**.
 - Following proper **RESTful** HTTP protocols.
   
-**Version:** Spring Boot 2.3.x
+**Version:** Spring Boot 2.7.x
 
 ---
 
@@ -54,7 +54,7 @@ To set up the project locally, download the necessary tools:
 - [Spring Tools Suite](https://spring.io/tools)
 - [Java JDK 11 LTS](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [VSCode](https://code.visualstudio.com/download)
-- [Heroku Account](https://www.heroku.com/)
+- [Heroku Account](https://www.heroku.com/) I used it before, but I no longer do because Heroku changed their free plans.
 - [Postman](https://www.postman.com/downloads/)
 
 #### Usage
@@ -62,7 +62,8 @@ To set up the project locally, download the necessary tools:
 2. Import the project into your workspace using Spring Boot.
 3. Set up the **MySQL** database and configure it in the application properties.
 4. Start the backend server.
-5. Run the **Angular** frontend application, which is built to consume the REST API efficiently.
+5. **Postman** 
+6. Run **Angular** frontend application, which is built to consume the REST API efficiently. https://github.com/peterviegas/purchase-order-front-end
   
 ---
 
