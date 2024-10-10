@@ -1,7 +1,7 @@
 ## purchase-order-back-end
 Purchase Order - Creation of objects and tables using Spring Boot 2.x technologies to develop a REST API hosting.
 
-### 📚 Core Concepts:
+#### 📚 Core Concepts:
 
 - **Spring Boot 2.x.x**
 - **Spring Data JPA**
@@ -19,13 +19,13 @@ Purchase Order - Creation of objects and tables using Spring Boot 2.x technologi
 
 ---
 
-### 🛠 Functional Overview
+#### 🛠 Functional Overview
 
 In this project, you will learn to build a complete web application, implementing a CRUD (Create, Read, Update, and Delete) system for a **Purchase Order Management System**.
 
 ---
 
-### 🔧 Technical Overview - Backend
+#### 🔧 Technical Overview - Backend
 
 The backend is built using **Java** and **Spring Boot 2.x.x**. It includes:
 - Building a **REST API** with **MySQL** database integration.
@@ -37,7 +37,7 @@ The backend is built using **Java** and **Spring Boot 2.x.x**. It includes:
 
 ---
 
-#### 📄 Table of Contents
+##### 📄 Table of Contents
 - [What You Will Learn](#📚-what-you-will-learn)
 - [Functional Overview](#🛠-functional-overview)
 - [Technical Overview - Backend](#🔧-technical-overview---backend)
@@ -49,7 +49,7 @@ The backend is built using **Java** and **Spring Boot 2.x.x**. It includes:
 
 ---
 
-### 🚀 Installation
+#### 🚀 Installation
 
 To set up the project locally, download the necessary tools:
 - [Spring Tools Suite](https://spring.io/tools)
@@ -58,7 +58,7 @@ To set up the project locally, download the necessary tools:
 - [Heroku Account](https://www.heroku.com/) I used it before, but I no longer do because Heroku changed their free plans.
 - [Postman](https://www.postman.com/downloads/)
 
-#### Usage
+##### Usage
 1. Clone the repository.
 2. Import the project into your workspace using Spring Boot.
 3. Set up the **MySQL** database and configure it in the application properties.
@@ -68,7 +68,7 @@ To set up the project locally, download the necessary tools:
 
 ---
 
-### 🧪 Test Coverage
+#### 🧪 Test Coverage
 
 For the tests, the parameters are passed to the API via the **application.properties** file. The tests were created to cover the main functionalities of the project, such as:
 
@@ -82,46 +82,46 @@ For the tests, the parameters are passed to the API via the **application.proper
   - Deleting one seller.
   - Deleting one customer.
 
-### ℹ️ Additional Information
+#### ℹ️ Additional Information
 
-#### POST - CPF Validation
+##### POST - CPF Validation
 - Validates the CPF according to Brazilian rules.
 - Checks if the CPF already exists in the database to avoid duplicating a customer.
 
-#### PUT - CPF Validation
+##### PUT - CPF Validation
 - Performs validation in case the document being updated is the same as in the POST. If attempting to change to an already existing CPF, it informs that the CPF is already registered.
 
-#### DELETE - Customer Deletion
+##### DELETE - Customer Deletion
 - Checks if the customer has any **Purchase Orders (PO)**. If they do, deletion is not allowed.
 
-### 📄 PO (Purchase Order)
-#### Additional Information:
+#### 📄 PO (Purchase Order)
+##### Additional Information:
 - **POST**: Uses an **enum** type for priority and status.
 - Seller and customer are linked by their IDs as the tables are related.
 
-#### PUT - Update PO
+##### PUT - Update PO
 - Example of passing only the body. In the case of the customer, it was being mentioned as a parameter in the URL, but here the ID is inside the body.
 
-### 🛒 Sellers
+#### 🛒 Sellers
 
-#### PUT - CPF Validation
+##### PUT - CPF Validation
 - Validates the CPF according to Brazilian rules.
 - Checks if the CPF already exists in the database to avoid duplicating a seller.
 
-#### POST - Seller Update
+##### POST - Seller Update
 - Receives the ID as a parameter and the body contains the information to be updated.
 - If an invalid or already registered CPF is provided, the system informs that the CPF cannot be changed.
 
-#### DELETE - Seller Deletion
+##### DELETE - Seller Deletion
 - Checks if the seller has any **Purchase Orders (PO)** linked to their ID. If they do, deletion is not allowed.
 
 ---
 
-### 🤝 Contributing
+#### 🤝 Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
 
-#### How You Can Help:
+##### How You Can Help:
 - **Report Bugs:** If you find a bug, please report it using the issues page.
 - **Suggest Features:** Have a feature request? Open an issue and let us know.
 - **Pull Requests:** If you'd like to contribute code, submit a pull request with your changes.
@@ -130,11 +130,11 @@ For more information, check out the **Contribution Guidelines**.
 
 ---
 
-### 📜 License
+#### 📜 License
 This project is not licensed and is in the public domain. Feel free to use it as you like.
 
 ---
 
-### 🙏 Acknowledgments
+#### 🙏 Acknowledgments
 
 A special thank you to **Vandir Cezar** for his excellent course on Udemy, which was instrumental in the development of this project.
