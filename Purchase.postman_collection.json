@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "60066e5e-2434-4dd6-99f3-5011e0430ae5",
+		"name": "Purchase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21608893",
+		"_collection_link": "https://blue-crater-479006.postman.co/workspace/Team-Workspace~014b05a5-8552-403b-8cb4-371e7f49cd7f/collection/21608893-60066e5e-2434-4dd6-99f3-5011e0430ae5?action=share&source=collection_link&creator=21608893"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customers All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customers Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customers create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Mr. Brow\",\r\n    \"cpf\": \"415.299.070-80\",\r\n    \"telefone\": \"(88) 98888-7777\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customers update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Mr. Brown\",\r\n    \"cpf\": \"415.299.070-80\",\r\n    \"telefone\": \"(88) 98888-7777\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customers Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PO Purchase Order",
+			"item": [
+				{
+					"name": "PO All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/oc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/oc/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oc",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataAbertura\": \"09/10/2024 23:02\",\r\n    \"dataFechamento\": null,\r\n    \"prioridade\": 0,\r\n    \"observacoes\": \"Teste create OC\",\r\n    \"status\": 0,\r\n    \"vendedora\": 1,\r\n    \"cliente\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/oc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PO Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"dataAbertura\": \"09/10/2024 23:02\",\r\n    \"dataFechamento\": null,\r\n    \"prioridade\": 0,\r\n    \"observacoes\": \"Teste create OC blbblblblbllblblbl\",\r\n    \"status\": 0,\r\n    \"vendedora\": 1,\r\n    \"cliente\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/oc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sellers",
+			"item": [
+				{
+					"name": "Sellers All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vendedoras",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sellers Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vendedoras/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedoras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sellers Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Ana\",\r\n    \"cpf\": \"125.415.310-10\",\r\n    \"telefone\": \"(88) 98888-8888\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/vendedoras",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sellers Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Ana\",\r\n    \"cpf\": \"125.415.310-10\",\r\n    \"telefone\": \"(88) 98888-8888\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/vendedoras/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedoras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sellers Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vendedoras/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vendedoras",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
